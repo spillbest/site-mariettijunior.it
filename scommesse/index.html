@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Betaland scommesse: quote, calcio e live 2026</title>
+<meta name="description" content="Betaland scommesse sportive: quote in tempo reale, calcio e palinsesto completo, scommesse live e multipla. Come scommettere su Betaland in italiano.">
+<link rel="canonical" href="https://betlandit.com/scommesse/">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<style>
+:root{
+  --green:#2f9e5e; --green-d:#256f44; --green-dd:#1c5836; --green-h:#37ab68; --green-line:#2a8a53;
+  --ink:#1d2125; --mut:#6b7280; --line:#e4e7ea; --bg:#eef1f3;
+  --side:#2b2e33; --side2:#33373d; --side3:#3c4148; --side-line:#23262b;
+  --odd:#3a3f46; --odd-h:#454b53; --orange:#f0a830; --yellow:#f5c518;
+  --txt-d:#cdd2d9;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Segoe UI',Roboto,system-ui,Arial,sans-serif;background:var(--bg);color:var(--ink);font-size:14px;line-height:1.5}
+a{color:inherit;text-decoration:none}
+img{max-width:100%;display:block}
+.wrap{max-width:1400px;margin:0 auto}
+
+/* Top date bar */
+.topbar{background:var(--green-dd);color:#dff3e8;font-size:12.5px;padding:7px 18px;display:flex;align-items:center;justify-content:space-between}
+.topbar .x{opacity:.7}
+
+/* Header */
+header{background:var(--green);color:#fff;padding:16px 18px;display:flex;align-items:center;gap:18px}
+.logo{display:flex;align-items:center;gap:12px}
+.logo svg{width:40px;height:40px;flex:none}
+.logo .name{font-size:30px;font-weight:800;letter-spacing:-.5px;line-height:1}
+.logo .tag{font-size:12px;font-weight:600;opacity:.85;margin-top:1px}
+.head-right{margin-left:auto;display:flex;gap:10px}
+.btn{display:inline-flex;align-items:center;justify-content:center;font-weight:700;border-radius:6px;padding:0 18px;height:40px;cursor:pointer;border:none;font-size:14px;white-space:nowrap}
+.btn-ghost{background:rgba(255,255,255,.12);color:#fff;border:1.5px solid rgba(255,255,255,.55)}
+.btn-ghost:hover{background:rgba(255,255,255,.2)}
+.btn-yellow{background:var(--yellow);color:#241f00}
+.btn-yellow:hover{filter:brightness(1.06)}
+.btn-green{background:var(--green);color:#fff}
+.btn-green:hover{background:var(--green-h)}
+
+/* Primary nav */
+.nav1{background:#fff;border-bottom:1px solid var(--line);display:flex;justify-content:center;gap:34px}
+.nav1 a{padding:14px 4px;font-weight:700;color:#5a626b;border-bottom:3px solid transparent;text-transform:uppercase;font-size:13.5px;letter-spacing:.4px}
+.nav1 a.on{color:var(--green-d);border-bottom-color:var(--green)}
+.nav2{background:#f4f6f7;border-bottom:1px solid var(--line);display:flex;gap:24px;padding:9px 18px;overflow-x:auto;scrollbar-width:none}
+.nav2::-webkit-scrollbar{display:none}
+.nav2 a{font-size:12.5px;font-weight:700;color:#6b7280;text-transform:uppercase;letter-spacing:.3px;white-space:nowrap}
+.nav2 a.on{color:var(--green-d)}
+.nav2 a:hover{color:var(--green-d)}
+.navsite{background:#fff;border-bottom:1px solid var(--line);display:flex;gap:6px;padding:9px 18px;overflow-x:auto;scrollbar-width:none}
+.navsite::-webkit-scrollbar{display:none}
+.navsite a{font-size:13px;font-weight:700;color:var(--green-d);padding:6px 12px;border-radius:6px;white-space:nowrap}
+.navsite a:hover{background:#eef6f0}
+.navsite a.on{background:var(--green);color:#fff}
+
+/* Layout */
+.layout{display:grid;grid-template-columns:248px minmax(0,1fr) 300px;gap:14px;padding:14px 18px;align-items:start}
+
+/* Sidebar (sport menu) */
+.side{background:var(--side);border-radius:8px;overflow:hidden;color:var(--txt-d);font-size:13px}
+.side .filt{display:flex;gap:4px;padding:10px;flex-wrap:wrap;border-bottom:1px solid var(--side-line)}
+.side .filt span{font-size:11px;font-weight:700;padding:4px 7px;border-radius:4px;background:var(--side3);cursor:pointer;color:#aeb4bc}
+.side .filt span.on{background:var(--green);color:#fff}
+.side .search{padding:10px}
+.side .search input{width:100%;background:var(--side3);border:none;border-radius:6px;padding:9px 12px;color:#fff;font-size:13px}
+.side .search input::placeholder{color:#8b929b}
+.days{display:flex;gap:3px;padding:0 10px 10px;border-bottom:1px solid var(--side-line)}
+.days a{flex:1;text-align:center;font-size:11px;font-weight:700;padding:6px 0;border-radius:4px;background:var(--side3);color:#aeb4bc}
+.days a:hover{background:var(--green);color:#fff}
+.qf{margin:10px;background:var(--yellow);color:#241f00;font-weight:800;text-align:center;padding:11px;border-radius:6px;font-size:13px;display:flex;align-items:center;justify-content:center;gap:8px;cursor:pointer}
+.side-h{background:var(--side2);font-weight:800;text-transform:uppercase;font-size:11.5px;letter-spacing:.4px;padding:11px 12px;color:#fff;display:flex;align-items:center;justify-content:space-between;border-top:1px solid var(--side-line)}
+.side-h .c{background:var(--green);color:#fff;border-radius:10px;font-size:11px;padding:1px 8px}
+.srow{display:flex;align-items:center;gap:9px;padding:9px 12px;border-top:1px solid var(--side-line);cursor:pointer}
+.srow:hover{background:var(--side2)}
+.srow .ico{width:18px;height:18px;flex:none;opacity:.9}
+.srow .nm{flex:1;font-weight:600;color:#e7eaee}
+.srow.sub{padding-left:20px;font-size:12.5px}
+.srow.sub .nm{color:#c2c8d0;font-weight:500}
+.srow .c{color:#8b929b;font-size:12px;font-variant-numeric:tabular-nums}
+.flag{width:18px;height:13px;border-radius:2px;flex:none;background:#555;overflow:hidden;display:inline-block}
+
+/* Center */
+.main{min-width:0;display:flex;flex-direction:column;gap:14px}
+.hero{background:linear-gradient(120deg,var(--green-dd),var(--green));border-radius:10px;padding:26px 28px;color:#fff;position:relative;overflow:hidden}
+.hero:after{content:"";position:absolute;right:-40px;top:-40px;width:220px;height:220px;background:radial-gradient(circle,rgba(255,255,255,.12),transparent 70%)}
+.hero .kick{font-size:13px;font-weight:700;letter-spacing:.5px;opacity:.9;text-transform:uppercase}
+.hero h1{font-size:27px;font-weight:800;margin:8px 0 6px;line-height:1.15;max-width:640px}
+.hero p{font-size:14.5px;opacity:.94;max-width:600px;margin-bottom:16px}
+.hero .cta{display:flex;gap:10px;flex-wrap:wrap}
+.phero{background:linear-gradient(120deg,var(--green-dd),var(--green));border-radius:10px;padding:22px 26px;color:#fff;margin-bottom:14px}
+.phero .kick{font-size:12.5px;font-weight:700;letter-spacing:.5px;opacity:.9;text-transform:uppercase}
+.phero h1{font-size:23px;font-weight:800;margin-top:6px;line-height:1.2}
+.crumb{font-size:12px;color:var(--mut);margin-bottom:10px;font-weight:600}
+.crumb a{color:var(--green-d)}
+
+.card{background:#fff;border:1px solid var(--line);border-radius:10px;overflow:hidden}
+.card-h{background:var(--green);color:#fff;font-weight:800;text-transform:uppercase;font-size:13px;letter-spacing:.4px;padding:11px 16px;display:flex;align-items:center;gap:9px}
+.card-h .live{margin-left:auto;font-size:11px;background:rgba(255,255,255,.18);padding:2px 8px;border-radius:10px}
+
+/* match rows */
+.match{display:grid;grid-template-columns:1fr auto;gap:12px;padding:12px 16px;border-bottom:1px solid var(--line);align-items:center}
+.match:last-child{border-bottom:none}
+.match .when{font-size:11.5px;color:var(--mut);font-weight:700;margin-bottom:3px;display:flex;align-items:center;gap:7px}
+.match .lg{background:#eef6f0;color:var(--green-d);border-radius:4px;padding:1px 7px;font-size:10.5px;font-weight:700}
+.match .teams{font-weight:700;font-size:14.5px}
+.match .teams .vs{color:var(--mut);font-weight:600;margin:0 6px;font-size:12px}
+.odds{display:flex;gap:6px}
+.odd{background:var(--odd);color:#fff;border-radius:6px;padding:7px 0;width:62px;text-align:center;cursor:pointer;line-height:1.1}
+.odd:hover{background:var(--odd-h)}
+.odd .k{display:block;font-size:10px;color:#aab0b8;font-weight:700;margin-bottom:2px}
+.odd .v{font-weight:800;color:var(--orange);font-size:14px}
+
+/* SEO content */
+.seo{background:#fff;border:1px solid var(--line);border-radius:10px;padding:26px 30px}
+.seo h2{font-size:21px;font-weight:800;margin:26px 0 12px;color:#1d2125}
+.seo h2:first-child{margin-top:0}
+.seo h3{font-size:16px;font-weight:800;margin:18px 0 8px;color:#2c333a}
+.seo p{color:#3a424b;margin-bottom:12px}
+.seo ul,.seo ol{margin:10px 0 14px 4px;list-style:none;color:#3a424b}
+.seo li{position:relative;padding:5px 0 5px 24px}
+.seo ul li:before{content:"";position:absolute;left:3px;top:13px;width:7px;height:7px;border-radius:2px;background:var(--green)}
+.seo ol{counter-reset:n}.seo ol li{counter-increment:n}
+.seo ol li:before{content:counter(n);position:absolute;left:0;top:5px;width:20px;height:20px;border-radius:5px;background:#eef6f0;color:var(--green-d);font-size:11px;font-weight:800;display:flex;align-items:center;justify-content:center}
+.otable{width:100%;border-collapse:collapse;border:1px solid var(--line);border-radius:8px;overflow:hidden;margin:14px 0;font-size:13.5px}
+.otable td{padding:11px 14px;border-bottom:1px solid var(--line)}
+.otable tr:last-child td{border-bottom:none}
+.otable td:first-child{font-weight:700;width:42%;background:#f6f8f9}
+.codebox{display:flex;flex-wrap:wrap;align-items:center;gap:14px;background:#eef6f0;border:1px dashed var(--green);border-radius:8px;padding:14px 18px;margin:14px 0}
+.codebox b{font-size:18px;color:var(--green-d);letter-spacing:2px;font-weight:900}
+.pc{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:16px 0}
+.pc .col{border:1px solid var(--line);border-radius:10px;padding:16px 18px;background:#fafbfc}
+.pc h3{margin:0 0 10px;font-size:15px}
+.pc .pro h3{color:var(--green-d)}.pc .con h3{color:#d9663a}
+.pc ul{margin:0}.pc li{padding:5px 0 5px 24px;font-size:13.5px}
+.pc ul li:before{content:none}
+.pc .pro li:before{content:"✓";position:absolute;left:2px;color:var(--green-d);font-weight:800}
+.pc .con li:before{content:"–";position:absolute;left:4px;color:#d9663a;font-weight:800}
+.faq details{border:1px solid var(--line);border-radius:8px;margin-bottom:9px;overflow:hidden}
+.faq summary{cursor:pointer;padding:14px 16px;font-weight:700;list-style:none;display:flex;justify-content:space-between;gap:12px;background:#fafbfc}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary:after{content:"+";color:var(--green);font-weight:800;font-size:19px}
+.faq details[open] summary:after{content:"–"}
+.faq .ans{padding:12px 16px;color:#3a424b}
+.intlinks{display:flex;flex-wrap:wrap;gap:8px;margin-top:6px}
+.intlinks a{background:#eef6f0;color:var(--green-d);font-weight:700;font-size:13px;padding:7px 13px;border-radius:6px}
+.intlinks a:hover{background:var(--green);color:#fff}
+.rating{display:flex;align-items:center;gap:16px;border:1px solid var(--line);border-radius:10px;padding:16px 18px;margin:14px 0;background:#fafbfc}
+.rating .num{font-size:36px;font-weight:900;color:var(--green-d);line-height:1}
+.rating .st{color:var(--orange);font-size:17px;letter-spacing:1px}
+.rating .by{color:var(--mut);font-size:12.5px;margin-top:3px}
+.scoretab{width:100%;border-collapse:collapse;margin:12px 0;font-size:13.5px;border:1px solid var(--line);border-radius:8px;overflow:hidden}
+.scoretab td{padding:9px 13px;border-bottom:1px solid var(--line)}
+.scoretab tr:last-child td{border-bottom:none}
+.scoretab td:last-child{text-align:right;color:var(--orange);font-weight:700;white-space:nowrap}
+.revs{display:grid;gap:10px;margin:14px 0}
+.rev{border:1px solid var(--line);border-radius:9px;padding:13px 16px;background:#fafbfc}
+.rev__top{display:flex;align-items:center;gap:10px;margin-bottom:5px}
+.rev__name{font-weight:800}
+.rev__stars{color:var(--orange);letter-spacing:1px;font-size:13px}
+.rev p{margin:0;color:#3a424b;font-size:13.5px;font-style:italic}
+
+/* Right column */
+.rcard{background:#fff;border:1px solid var(--line);border-radius:10px;overflow:hidden;margin-bottom:14px}
+.schedina .card-h{background:var(--side);}
+.sched-body{padding:14px 16px;color:var(--mut);font-size:13px;text-align:center}
+.sched-tabs{display:flex;gap:5px;padding:10px 12px;background:var(--side2)}
+.sched-tabs span{width:30px;height:30px;border-radius:6px;background:var(--side3);color:#aeb4bc;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:13px}
+.sched-tabs span.on{background:var(--green);color:#fff}
+.sched-empty{padding:24px 16px;text-align:center;color:var(--mut)}
+.sched-empty .big{font-weight:800;color:#2c333a;margin-bottom:4px}
+.promo{padding:18px 16px;text-align:center}
+.promo .lab{font-size:12px;font-weight:700;color:var(--green-d);text-transform:uppercase;letter-spacing:.4px}
+.promo .amt{font-size:24px;font-weight:900;margin:6px 0 2px;color:#1d2125}
+.promo .sub{font-size:13px;color:var(--mut);margin-bottom:14px}
+.appbox{padding:16px;display:flex;gap:12px;align-items:center}
+.appbox .ic{width:40px;height:40px;border-radius:9px;background:var(--green);color:#fff;display:flex;align-items:center;justify-content:center;flex:none}
+.appbox .t{font-weight:800;font-size:14px}.appbox .s{font-size:12px;color:var(--mut)}
+
+/* Footer */
+footer{background:var(--side);color:#aeb4bc;margin-top:18px;padding:26px 18px}
+.foot-in{max-width:1400px;margin:0 auto}
+.foot-nav{display:flex;flex-wrap:wrap;gap:18px;margin-bottom:16px}
+.foot-nav a{color:#cdd2d9;font-weight:600;font-size:13px}
+.foot-nav a:hover{color:#fff}
+.foot-comp{display:flex;align-items:flex-start;gap:14px;background:#23262b;border-radius:9px;padding:14px 16px;font-size:12.5px;line-height:1.55;margin-bottom:12px}
+.foot-comp .age{flex:none;width:38px;height:38px;border-radius:50%;border:2px solid var(--orange);color:var(--orange);display:flex;align-items:center;justify-content:center;font-weight:900;font-size:13px}
+.foot-low{font-size:12px;color:#7c828b}
+
+@media(max-width:1080px){
+  .layout{grid-template-columns:220px minmax(0,1fr)}
+  .rcol{display:none}
+}
+@media(max-width:820px){
+  .layout{grid-template-columns:minmax(0,1fr);padding:12px}
+  .side{display:none}
+  .nav1{gap:24px}
+  .hero h1{font-size:22px}
+  .pc{grid-template-columns:1fr}
+  .seo{padding:20px}
+  .match{grid-template-columns:1fr}
+  .odds{justify-content:flex-start}
+}
+@media(max-width:480px){
+  .logo .name{font-size:24px}.logo svg{width:32px;height:32px}
+  .head-right .btn{padding:0 12px;font-size:13px}
+  .odd{width:56px}
+}
+</style>
+<style>
+.intentbox{margin:0 0 14px;border:1px solid #dce3df;border-radius:10px;overflow:hidden;background:#fff}
+.intenthead{background:#102f25;color:#fff;padding:13px 16px}.intenthead small,.intenthead b{display:block}.intenthead small{color:#f4c928;font-size:10px;font-weight:900;letter-spacing:.1em}.intenthead b{font-size:19px}
+.intentgrid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:9px;padding:12px}.intentcard{min-width:0;border:1px solid #dce3df;border-radius:8px;padding:12px;background:#f7faf8}.intentcard b,.intentcard small{display:block}.intentcard small{color:#66746d}.intentcard strong{display:block;color:#087447;font-size:20px;margin:7px 0}.intentcard a{display:block;background:#f4c928;color:#17231e;text-align:center;padding:9px;border-radius:6px;font-weight:900;margin-top:9px}
+.oddsline{display:grid;grid-template-columns:minmax(0,1fr) repeat(3,56px);gap:6px;align-items:center;border-top:1px solid #e3e8e5;padding:10px 13px}.oddsline:first-child{border-top:0}.oddsline a{background:#e9f3ee;border:1px solid #c9ddd2;border-radius:6px;padding:7px;text-align:center;font-weight:900;color:#087447}
+.appchoices{display:flex;gap:9px;flex-wrap:wrap;padding:13px}.appchoices a{background:#112b22;color:#fff;border-radius:8px;padding:11px 15px;font-weight:900}.appchoices small{display:block;color:#9fb8ad}
+.loginmock{padding:14px;display:grid;grid-template-columns:1fr 1fr;gap:9px}.loginmock span{border:1px solid #d6ddd9;background:#f4f6f5;border-radius:7px;padding:11px;color:#8a958f}.loginmock a{grid-column:1/-1;background:#f4c928;text-align:center;padding:10px;border-radius:7px;font-weight:900}
+@media(max-width:600px){.intentgrid{grid-template-columns:1fr}.oddsline{grid-template-columns:minmax(0,1fr) repeat(3,48px);font-size:12px}.loginmock{grid-template-columns:1fr}.loginmock a{grid-column:1}.intenthead b{font-size:17px}}
+</style>
+<link rel="alternate" hreflang="it-it" href="https://betlandit.com/scommesse/">
+<link rel="alternate" hreflang="x-default" href="https://betlandit.com/">
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+<symbol id="i-ball" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a10 10 0 100 20 10 10 0 000-20m0 2a8 8 0 016.3 3.1l-2.1 1.5-2.7-2 .6-2.4q-1-.2-2.1-.2m-2.1.2.6 2.4-2.7 2-2.1-1.5A8 8 0 019.9 4.2M4.3 9.4l2 1.5-1 3-2.2.1A8 8 0 014.3 9.4M12 7l3.2 2.3-1.2 3.7H10l-1.2-3.7zm7.7 2.4a8 8 0 011.2 4.6l-2.2-.1-1-3zM7.2 14.6l2.4 0 1.3 3.6-1.8 1.4a8 8 0 01-1.9-5m9.6 0a8 8 0 01-1.9 5l-1.8-1.4 1.3-3.6z"/></symbol>
+<symbol id="i-tennis" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a10 10 0 100 20 10 10 0 000-20M5 5a8 8 0 011.5 11A8 8 0 015 5m14 0a8 8 0 010 14 8 8 0 010-14"/></symbol>
+<symbol id="i-basket" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a10 10 0 100 20 10 10 0 000-20m6.9 6h-3.4q.3-2 .9-3.7A8 8 0 0118.9 8M12 4q1.3 2 1.5 4h-3Q10.7 6 12 4M7.6 4.3Q8.2 6 8.5 8H5.1a8 8 0 012.5-3.7M4.3 10h4.3q.1 1 0 2H4.3a8 8 0 010-2m.8 6h3.4q-.3 2-.9 3.7A8 8 0 015.1 16M12 20q-1.3-2-1.5-4h3Q13.3 18 12 20m4.4-.3q-.6-1.7-.9-3.7h3.4a8 8 0 01-2.5 3.7m-.9-5.7q.1-1 0-2h4.2a8 8 0 010 2z"/></symbol>
+<symbol id="i-volley" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a10 10 0 100 20 10 10 0 000-20m7 7-5-1.5V4.2A8 8 0 0119 9M11 4v4l-5 1.5A8 8 0 0111 4M4.2 11 9 12.5l-3 4A8 8 0 014.2 11M9 19.8A8 8 0 016.5 18l3-4 3 4A8 8 0 019 19.8m6.5-1.8L12.5 14l4.5 1A8 8 0 0115.5 18m.5-4-3-1V8l5-1a8 8 0 01-2 7"/></symbol>
+<symbol id="i-f1" viewBox="0 0 24 24"><path fill="currentColor" d="M2 11h6l2-2h6l2 2h4v3h-3a3 3 0 01-6 0H11a3 3 0 01-6 0H2zm5 1.5A1.5 1.5 0 108.5 14 1.5 1.5 0 007 12.5m10 0A1.5 1.5 0 1018.5 14 1.5 1.5 0 0017 12.5"/></symbol>
+<symbol id="i-cards" viewBox="0 0 24 24"><path fill="currentColor" d="M5 4h9a2 2 0 012 2v12a2 2 0 01-2 2H5a2 2 0 01-2-2V6a2 2 0 012-2m4.5 3L7 11h5zM17 6.8l1.9.5a2 2 0 011.4 2.5l-2.6 9.3a2 2 0 01-.7 1V6.8z"/></symbol>
+<symbol id="i-star" viewBox="0 0 24 24"><path fill="currentColor" d="m12 2 3 6.3 6.9.9-5 4.8 1.3 6.8L12 17.6 5.8 20.8 7.1 14l-5-4.8 6.9-.9z"/></symbol>
+<symbol id="i-phone" viewBox="0 0 24 24"><path fill="currentColor" d="M7 2h10a2 2 0 012 2v16a2 2 0 01-2 2H7a2 2 0 01-2-2V4a2 2 0 012-2m5 17a1 1 0 100 2 1 1 0 000-2M7 5v12h10V5z"/></symbol>
+</defs></svg>
+<header>
+  <a class="logo" href="/" aria-label="Betaland">
+    <svg viewBox="0 0 48 48"><g fill="#fff"><rect x="3"  y="3"  width="19" height="19" rx="6"/><rect x="26" y="3"  width="19" height="19" rx="6"/><rect x="3"  y="26" width="19" height="19" rx="6"/><rect x="26" y="26" width="19" height="19" rx="6"/></g><circle cx="24" cy="24" r="5" fill="#2f9e5e"/></svg>
+    <div><div class="name">betaland</div><div class="tag">fun first.</div></div>
+  </a>
+  <div class="head-right">
+    <a class="btn btn-ghost" data-aff href="/referral-link">Accedi</a>
+    <a class="btn btn-yellow" data-aff href="/referral-link">Registrati</a>
+  </div>
+</header>
+<nav class="nav2">
+  <a class="on" data-aff href="/referral-link">Prematch</a>
+  <a data-aff href="/referral-link">Live Suite</a>
+  <a data-aff href="/referral-link">Multibet</a>
+  <a data-aff href="/referral-link">Eventi Live</a>
+  <a data-aff href="/referral-link">Multilive</a>
+  <a data-aff href="/referral-link">Calendario</a>
+  <a data-aff href="/referral-link">Casino</a>
+  <a data-aff href="/referral-link">Poker</a>
+</nav>
+<nav class="navsite">
+  <a href="/" class="on">Home</a>
+  <a href="/scommesse/" class="on">Scommesse</a>
+  <a href="/prenotatore/">Prenotatore</a>
+  <a href="/app/">App</a>
+  <a href="/accesso/">Accesso</a>
+  <a href="/bonus/">Bonus</a>
+  <a href="/casino/">Casino</a>
+  <a href="/recensioni/">Recensioni</a>
+</nav>
+<div class="layout wrap">
+<aside class="side">
+    <div class="filt"><span>1H</span><span>3H</span><span>Oggi</span><span>2D</span><span>3D</span><span class="on">Tutto</span></div>
+    <div class="search"><input type="search" placeholder="Ricerca" aria-label="Ricerca"></div>
+    <div class="days"><a data-aff href="/referral-link">Ve</a><a data-aff href="/referral-link">Sa</a><a data-aff href="/referral-link">Do</a><a data-aff href="/referral-link">Lu</a><a data-aff href="/referral-link">Ma</a><a data-aff href="/referral-link">Me</a><a data-aff href="/referral-link">Gi</a></div>
+    <div class="qf" data-aff onclick="">Quote favorite</div>
+
+    <div class="side-h">In evidenza <span class="c">11</span></div>
+    <a class="srow sub" data-aff href="/referral-link"><span class="flag" style="background:linear-gradient(#e30,#fff,#e30)"></span><span class="nm">Mondiale 2026</span><span class="c">44</span></a>
+    <a class="srow sub" data-aff href="/referral-link"><span class="flag" style="background:linear-gradient(90deg,#aa1518 40%,#f1bf00)"></span><span class="nm">LaLiga 2</span><span class="c">1</span></a>
+    <a class="srow sub" data-aff href="/referral-link"><span class="flag" style="background:linear-gradient(#ba0c2f,#fff,#00205b)"></span><span class="nm">1ª Divisione (NOR)</span><span class="c">8</span></a>
+    <a class="srow sub" data-aff href="/referral-link"><span class="flag" style="background:linear-gradient(#005bbb,#ffd500)"></span><span class="nm">Superettan</span><span class="c">8</span></a>
+    <a class="srow sub" data-aff href="/referral-link"><span class="flag" style="background:linear-gradient(#009b3a,#ffdf00)"></span><span class="nm">Brasileiro Serie B</span><span class="c">9</span></a>
+    <a class="srow sub" data-aff href="/referral-link"><span class="flag" style="background:linear-gradient(#74acdf,#fff,#74acdf)"></span><span class="nm">Primera Nacional</span><span class="c">18</span></a>
+
+    <div class="side-h">Sport</div>
+    <a class="srow" data-aff href="/referral-link"><svg class="ico"><use href="#i-ball"/></svg><span class="nm">Calcio</span><span class="c">368</span></a>
+    <a class="srow" data-aff href="/referral-link"><svg class="ico"><use href="#i-basket"/></svg><span class="nm">Basket</span><span class="c">35</span></a>
+    <a class="srow" data-aff href="/referral-link"><svg class="ico"><use href="#i-tennis"/></svg><span class="nm">Tennis</span><span class="c">155</span></a>
+    <a class="srow" data-aff href="/referral-link"><svg class="ico"><use href="#i-volley"/></svg><span class="nm">Pallavolo</span><span class="c">6</span></a>
+    <a class="srow" data-aff href="/referral-link"><svg class="ico"><use href="#i-f1"/></svg><span class="nm">Formula 1</span><span class="c">3</span></a>
+    <a class="srow" data-aff href="/referral-link"><svg class="ico"><use href="#i-f1"/></svg><span class="nm">Moto</span><span class="c">10</span></a>
+    <a class="srow" data-aff href="/referral-link"><svg class="ico"><use href="#i-ball"/></svg><span class="nm">Baseball</span><span class="c">30</span></a>
+    <a class="srow" data-aff href="/referral-link"><svg class="ico"><use href="#i-ball"/></svg><span class="nm">Pugilato</span><span class="c">24</span></a>
+    <a class="srow" data-aff href="/referral-link"><svg class="ico"><use href="#i-ball"/></svg><span class="nm">Rugby</span><span class="c">6</span></a>
+    <a class="srow" data-aff href="/referral-link"><svg class="ico"><use href="#i-tennis"/></svg><span class="nm">Tennistavolo</span><span class="c">125</span></a>
+  </aside>
+  <main class="main">
+    <div class="crumb"><a href="/">Home</a> › Scommesse</div>
+    <section class="phero"><div class="kick">Scommesse sportive</div><h1>Betaland scommesse — quote, calcio, palinsesto e live</h1></section>
+    <section class="intentbox"><div class="intenthead"><small>QUOTE INDICATIVE</small><b>Partite in evidenza</b></div><div class="oddsline"><b>Milan — Napoli</b><a data-aff href="/referral-link">2.45</a><a data-aff href="/referral-link">3.30</a><a data-aff href="/referral-link">2.90</a></div><div class="oddsline"><b>Juventus — Inter</b><a data-aff href="/referral-link">2.70</a><a data-aff href="/referral-link">3.10</a><a data-aff href="/referral-link">2.65</a></div><div class="oddsline"><b>Roma — Lazio</b><a data-aff href="/referral-link">2.35</a><a data-aff href="/referral-link">3.20</a><a data-aff href="/referral-link">3.10</a></div></section>
+    <article class="seo">
+      <h2>Le scommesse sportive di Betaland</h2>
+      <p>Le scommesse sono il motivo per cui Betaland esiste, e si vede. Il palinsesto è tra i più profondi del mercato italiano: si parte dal Mondiale 2026 e dalla Serie A, si passa per le coppe europee e i campionati esteri, e si arriva fino a tennis, basket, pallavolo, Formula 1 e una lunga coda di sport minori. Trattandosi di un operatore con licenza ADM, scommetti su una piattaforma autorizzata in Italia, con conto gioco protetto e gioco responsabile attivo. Non è un dettaglio da poco quando metti soldi su una giocata.</p>
+      <h2>Tipi di scommessa</h2>
+      <p>Su Betaland giochi nei modi a cui sei abituato. La singola quando hai un pronostico secco e non vuoi diluirlo. La multipla quando vuoi mettere insieme più eventi e alzare la posta, sapendo che basta un risultato sbagliato per perdere tutto. Il sistema quando preferisci coprirti, accettando una vincita più bassa in cambio di un margine di errore. Sta a te scegliere quanto rischiare.</p>
+      <h2>Quote e palinsesto</h2>
+      <p>Le quote non gridano al miracolo: stanno sulla media del mercato, competitive e senza brutte sorprese. Dove Betaland fa la differenza è la copertura. Sul calcio non ti fermi alla Serie A e alle coppe: trovi la seconda divisione norvegese, i campionati sudamericani, la lega australiana, roba che su parecchi siti semplicemente non c'è. Se vuoi preparare la giocata con calma e confermarla dopo, c'è il <a href="/prenotatore/">prenotatore</a>: imposti la schedina e ottieni un codice da usare quando vuoi.</p>
+      <h2>Scommesse live</h2>
+      <p>Durante le partite la sezione live aggiorna le quote in tempo reale. Puoi entrare a evento già iniziato, leggere l'andamento e piazzare la giocata nel momento che ritieni giusto. È la modalità più viva, e anche la più insidiosa: le quote ballano in fretta, quindi conviene avere chiaro cosa cerchi prima di puntare, altrimenti ti fai prendere dalla foga.</p>
+      <h2>Calcio e sport principali</h2>
+      <p>Il calcio resta il centro di tutto, con il Mondiale 2026 in primo piano, la Champions League, i tornei nazionali e quelli per club. Accanto al calcio, il tennis è ben coperto: ATP, WTA, Challenger e ITF, non solo i tabelloni principali. Poi basket, baseball, pallavolo e gli appuntamenti di Formula 1 e MotoGP. Per chi cerca le nicchie ci sono pugilato, rugby, freccette e tennistavolo.</p>
+      <h2>Scommesse e bonus</h2>
+      <p>Le scommesse si collegano al bonus di benvenuto e alle promozioni periodiche. Prima di attivare un'offerta, però, leggi sempre i requisiti di puntata: come funzionano lo trovi nella pagina <a href="/bonus/">bonus e codice promozionale</a>.</p>
+      <h2>Domande frequenti</h2>
+      <div class="faq"><details><summary>Come si scommette su Betaland?</summary><div class="ans">Accedi al conto, scegli l'evento e il tipo di scommessa (singola, multipla o sistema), aggiungi la quota alla schedina e conferma.</div></details><details><summary>Betaland ha le scommesse live?</summary><div class="ans">Sì. La sezione live aggiorna le quote in tempo reale durante gli eventi, così puoi puntare a partita in corso.</div></details><details><summary>Quali sport ci sono su Betaland?</summary><div class="ans">Calcio (Mondiale 2026 incluso), tennis, basket, baseball, pallavolo, Formula 1, MotoGP, pugilato, rugby, freccette e altri.</div></details><details><summary>Dove vedo il palinsesto Betaland?</summary><div class="ans">Nella sezione scommesse; per le giocate preparate in anticipo c'è il prenotatore.</div></details></div>
+    </article>
+  </main>
+<aside class="rcol">
+    <div class="rcard schedina">
+      <div class="card-h">Schedina <span class="live">1</span></div>
+      <div class="sched-tabs"><span class="on">1</span><span>2</span><span>3</span><span>4</span></div>
+      <div class="sched-empty"><div class="big">La tua schedina è vuota</div>Clicca su una quota per aggiungerla, oppure inserisci un codice di prenotazione.</div>
+      <div style="padding:0 16px 16px"><a class="btn btn-green" style="width:100%" data-aff href="/referral-link">Vai alle quote</a></div>
+    </div>
+    <div class="rcard">
+      <div class="card-h">Bonus di benvenuto</div>
+      <div class="promo">
+        <div class="lab">Nuovi iscritti</div>
+        <div class="amt">Bonus benvenuto</div>
+        <div class="sub">Sport + casino · licenza ADM · requisiti chiari</div>
+        <a class="btn btn-yellow" style="width:100%" data-aff href="/referral-link">Registrati ora</a>
+      </div>
+    </div>
+    <div class="rcard">
+      <div class="appbox">
+        <div class="ic"><svg style="width:22px;height:22px"><use href="#i-phone"/></svg></div>
+        <div><div class="t">App Betaland</div><div class="s">Android (APK) e iPhone</div></div>
+      </div>
+      <div style="padding:0 16px 16px"><a class="btn btn-green" style="width:100%" data-aff href="/referral-link">Scarica l'app</a></div>
+    </div>
+  </aside>
+</div>
+<footer>
+  <div class="foot-in">
+    <div class="foot-nav">
+      <a href="/">Home</a>
+      <a href="/scommesse/">Scommesse</a>
+      <a href="/prenotatore/">Prenotatore</a>
+      <a href="/app/">App</a>
+      <a href="/accesso/">Accesso</a>
+      <a href="/bonus/">Bonus</a>
+      <a href="/casino/">Casino</a>
+      <a href="/recensioni/">Recensioni</a>
+    </div>
+    <div class="foot-comp">
+      <span class="age">18+</span>
+      <span>Il gioco è vietato ai minori di 18 anni e può causare dipendenza patologica. Gioca responsabilmente. Betaland opera con licenza ADM (Agenzia delle Dogane e dei Monopoli). Le quote mostrate sono indicative. Sito informativo indipendente.</span>
+    </div>
+    <div class="foot-low">© 2026 Betaland · Tutti i diritti riservati · Gioca responsabilmente</div>
+  </div>
+</footer>
+<script>
+// ⚠ Link affiliato Betaland — INSERISCI QUI il link reale (ora segnaposto "#", link disattivati).
+document.addEventListener('DOMContentLoaded',function(){
+  var AFF="#"; // <-- metti qui l'URL affiliato; tutti i CTA si aggiornano da soli
+  document.querySelectorAll('[data-aff]').forEach(function(a){
+    if(AFF!=="#"){a.setAttribute('href',AFF);a.setAttribute('target','_blank');a.setAttribute('rel','sponsored nofollow noopener');}
+  });
+});
+</script>
+</body>
+</html>
